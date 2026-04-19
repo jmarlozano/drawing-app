@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+    <h1>My Drawing App</h1>
+    <p> Click and drag to draw!</p>
+    <hr /> 
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <div class="nav">
+    <div class="clr" data-clr="#000"></div>
+    <div class="clr" data-clr="red"></div>
+    <div class="clr" data-clr="blue"></div>
+    <div class="clr" data-clr="green"></div>
+    <div class="clr" data-clr="yellow"></div>
+    <div class="clr" data-clr="yellowgreen"></div>
+    <div class="clr" data-clr="orange"></div>
+    <div class="clr" data-clr="purple"></div>
+    <div class="clr" data-clr="#fff"></div>
+
+    <button class="eraser">Eraser</button>
+    <button class="clear">Clear</button>
+    <button class="save">Save</button>
+
+    <input type="color" value="#FFFFFF" id="fav_color">
+
+    <label for="brushSize" class="brushLabel">Brush</label>
+    <input type="range" name="brushSize" id="brushSize" value="5" min="1" max="30">
+    </div>
+
+</body>
+</html>

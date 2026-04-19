@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url(border.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(138, 205, 134);
+    font-family: "Fredericka the Great", serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: rgb(202, 138, 230);
+    font-weight: bold;
+    font-family: "Fredericka the Great", serif;
+    text-align: center;
+    font-size: 15px;
+}
+hr {
+    border: none;
+    border-top: 4px solid rgb(133, 184, 220);
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 1px 1px rgb(0, 0, 0);
+    margin: 10px auto 0;
+}
+.container {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 12px 20px;
+    text-align: center;
+    width: min(100%, 1000px);
+    margin-top: 90px;
+}
+#canvas {
+    display: block;
+}
+.nav {
+    width: 95%;
+    max-width: 1000px;
+    height: 60px;
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(to right, rgb(1, 160, 204), rgb(35, 86, 252));
+    box-shadow: 2px 2px black;
+    padding: 10px;
+    border-radius: 12px;
+    border: 3px solid white;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.nav div, .nav button, .nav input, .nav output, .nav label {
+    margin: 0;
+}
+
+.nav:hover, .clr:hover {
+    cursor: pointer;
+}
+
+.nav output {
+    flex: 0 0 auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.brushLabel {
+    margin-left: 5px;
+}
+.clr{
+    height: 35px;
+    width: 35px; 
+    background-color: blue;
+    border-radius: 50%;
+    border: 5px solid rgb(207, 207, 207);
+    box-shadow: 2px 2px black;
+    transition: transform .3s;
+}
+
+.clr:hover {
+    transform: scale(1, 2);
+}
+
+.clr:nth-child(1) {
+background-color: #000;}
+.clr:nth-child(2) {
+background-color: red;}
+.clr:nth-child(3) {
+background-color: blue;}
+.clr:nth-child(4) {
+background-color: green;}
+.clr:nth-child(5) {
+background-color: yellow;}
+.clr:nth-child(6) {
+background-color: yellowgreen;}
+.clr:nth-child(7) {
+background-color: orange;}
+.clr:nth-child(8) {
+background-color: purple;}
+.clr:nth-child(9) {
+background-color: #fff;}
+
+button {
+    border: none;
+    outline: none; 
+    padding: .6em 2em;
+    border-radius: 3px;
+    background: teal;
+    background: radial-gradient(circle,rgb(2, 120, 120) 0%, rgb(5, 27, 139) 100%);
+    color: white;
+    border: 3px solid white; 
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px black;
+}
+
+.save {
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgb(51, 10, 128) 100%);
+}
+
+.eraser {
+    background: #f8f7bc;
+    background: radial-gradient(circle,rgb(245, 213, 55) 0%, rgb(252, 122, 52) 100%);
+}
+input[type="color"]{
+    width: 60px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#brushSize {
+    cursor: pointer;
+    accent-color: rgb(68, 255, 255);
+}
+#brushOutput, .brushLabel {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    min-width: 25px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px){
+    .container {
+        width: min(90%, 700px);
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin-top: 120px;
+        padding: 10px 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    #brushOutput {
+        font-size: 12px;
+    }
+}
+
+
+
+
